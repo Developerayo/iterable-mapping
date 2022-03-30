@@ -1,7 +1,7 @@
 require("@nomiclabs/hardhat-ethers");
 
 module.exports = {
-  defaultNetwork: "",
+  defaultNetwork: "matic",
   networks: {
     hardhat: {
     },
@@ -11,14 +11,18 @@ module.exports = {
     }
   },
   solidity: {
-    version: "0.1.0",
+    version: "0.8.0",
     settings: {
+      optimizer: {
+        enabled: true,
+        runs: 200
+      }
     }
   },
   paths: {
-    sources: "./contracts",
-    tests: "",
-    cache: "",
-    artifacts: ""
+   
   },
+  mocha: {
+    timeout: 20000
+  }
 }
