@@ -6,7 +6,7 @@ module.exports = {
     hardhat: {
     },
     matic: {
-      url: 'https://polygon-mainnet.g.alchemy.com/v2/v3iUUC2ANxbDE-XodD-FcbZi1iGvWTdR',
+      url: '',;
       accounts: [''],
     }
   },
